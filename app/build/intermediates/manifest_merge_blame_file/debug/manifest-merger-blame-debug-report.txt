@@ -1,0 +1,149 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.roomdb"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:5:5-78
+11-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+12-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+13-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:7:5-80
+13-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:7:22-78
+14
+15    <application
+15-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:9:5-48:19
+16        android:name="com.example.roomdb.activities.BaseApplication"
+16-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:10:9-51
+17        android:allowBackup="true"
+17-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:11:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.7.0] C:\Users\Nimarta\.gradle\caches\transforms-3\ca997c9418d7495f0942b6d5c99d9b3d\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:12:9-43
+21        android:label="@string/app_name"
+21-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:13:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:14:9-54
+23        android:supportsRtl="true"
+23-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:15:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.RoomDB" >
+25-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:16:9-44
+26        <activity
+26-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:18:9-22:63
+27            android:name="com.example.roomdb.activities.AlarmActivity"
+27-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:19:13-53
+28            android:exported="false"
+28-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:20:13-37
+29            android:label="@string/title_activity_alarm"
+29-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:21:13-57
+30            android:theme="@style/Theme.RoomDB.NoActionBar" />
+30-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:22:13-60
+31        <activity
+31-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:23:9-25:40
+32            android:name="com.example.roomdb.activities.UpdateActivity"
+32-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:24:13-54
+33            android:exported="false" />
+33-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:25:13-37
+34        <activity
+34-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:26:9-28:40
+35            android:name="com.example.roomdb.activities.AddActivity"
+35-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:27:13-51
+36            android:exported="false" />
+36-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:28:13-37
+37        <activity
+37-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:29:9-37:20
+38            android:name="com.example.roomdb.activities.MainActivity"
+38-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:30:13-52
+39            android:exported="true" >
+39-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:31:13-36
+40            <intent-filter>
+40-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:32:13-36:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:33:17-69
+41-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:33:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:35:17-77
+43-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:35:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <receiver
+47-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:39:9-47:20
+48            android:name="com.example.roomdb.helper.Receiver"
+48-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:40:13-44
+49            android:exported="false" >
+49-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:41:13-37
+50            <intent-filter>
+50-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:42:13-46:29
+51                <action android:name="com.tester.alarmmanager" />
+51-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:43:17-66
+51-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:43:25-63
+52                <action android:name="android.intent.action.BOOT_COMPLETED" />
+52-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:44:17-78
+52-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:44:25-76
+53
+54                <category android:name="android.intent.category.DEFAULT" />
+54-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:45:17-76
+54-->D:\TodolistwithRoomDB\app\src\main\AndroidManifest.xml:45:27-73
+55            </intent-filter>
+56        </receiver>
+57
+58        <service
+58-->[androidx.room:room-runtime:2.4.2] C:\Users\Nimarta\.gradle\caches\transforms-3\69df31d9327d3897ec6c31f5ad118a6b\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+59            android:name="androidx.room.MultiInstanceInvalidationService"
+59-->[androidx.room:room-runtime:2.4.2] C:\Users\Nimarta\.gradle\caches\transforms-3\69df31d9327d3897ec6c31f5ad118a6b\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+60            android:directBootAware="true"
+60-->[androidx.room:room-runtime:2.4.2] C:\Users\Nimarta\.gradle\caches\transforms-3\69df31d9327d3897ec6c31f5ad118a6b\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+61            android:exported="false" />
+61-->[androidx.room:room-runtime:2.4.2] C:\Users\Nimarta\.gradle\caches\transforms-3\69df31d9327d3897ec6c31f5ad118a6b\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+62
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\95711550615bd34fbed5b5f0980232c7\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+64            android:name="androidx.window.extensions"
+64-->[androidx.window:window:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\95711550615bd34fbed5b5f0980232c7\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\95711550615bd34fbed5b5f0980232c7\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+66        <uses-library
+66-->[androidx.window:window:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\95711550615bd34fbed5b5f0980232c7\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+67            android:name="androidx.window.sidecar"
+67-->[androidx.window:window:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\95711550615bd34fbed5b5f0980232c7\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\95711550615bd34fbed5b5f0980232c7\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+69
+70        <provider
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\a64f540e597afbc46141093f3e4c495a\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+71            android:name="androidx.startup.InitializationProvider"
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\a64f540e597afbc46141093f3e4c495a\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+72            android:authorities="com.example.roomdb.androidx-startup"
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\a64f540e597afbc46141093f3e4c495a\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+73            android:exported="false" >
+73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\a64f540e597afbc46141093f3e4c495a\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+74            <meta-data
+74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\a64f540e597afbc46141093f3e4c495a\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\a64f540e597afbc46141093f3e4c495a\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+76                android:value="androidx.startup" />
+76-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Nimarta\.gradle\caches\transforms-3\a64f540e597afbc46141093f3e4c495a\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+77            <meta-data
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Nimarta\.gradle\caches\transforms-3\ceaa8da9c5d2c116062a32ff161a6c31\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Nimarta\.gradle\caches\transforms-3\ceaa8da9c5d2c116062a32ff161a6c31\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+79                android:value="androidx.startup" />
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Nimarta\.gradle\caches\transforms-3\ceaa8da9c5d2c116062a32ff161a6c31\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+80        </provider>
+81    </application>
+82
+83</manifest>
